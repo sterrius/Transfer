@@ -1,0 +1,7 @@
+<h1>Welcome to my Angular frontend</h1>
+<p [hidden]="!loading()">Loading data...</p>
+<p [hidden]="!error()" role="alert">{{ error() }}</p>
+<pre [hidden]="loading() || error()">{{ result() | json }}</pre>
+<br />
+<button type="button" (click)="logout()">Log out</button>
+<router-outlet></router-outlet>
